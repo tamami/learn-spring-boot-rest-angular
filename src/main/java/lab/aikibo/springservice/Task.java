@@ -30,7 +30,7 @@ public class Task {
   private String taskStatus;
 
   @Column(name="task_archived")
-  private int taskArchived = 0;
+  private boolean taskArchived = false;
 
   @Override
   public String toString() {

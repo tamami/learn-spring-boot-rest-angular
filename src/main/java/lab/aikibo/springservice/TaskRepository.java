@@ -12,7 +12,7 @@ import java.util.List;
 @RepositoryRestResource
 public interface TaskRepository extends CrudRepository<Task, Integer> {
 
-  List<Task> findByTaskArchived(@Param("archivedfalse") int taskArchivedFalse);
+  List<Task> findByTaskArchived(@Param("archivedfalse") boolean taskArchivedFalse);
   List<Task> findByTaskStatus(@Param("status") String taskStatus);
 
 }
